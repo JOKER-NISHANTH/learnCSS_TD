@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+        #wrapper{
+            border: 2px solid crimson;
+            margin: 0 25%;
+        }
+        /* For remove the link underline */
+        a{
+            text-decoration: none;
+            color: black;
+
+        }
+        li:hover{
+            background-color: blueviolet;
+
+        }
+
+        /* Apply color for ul block-level element */
+        ul{
+            background-color: chocolate;
+            /* padding: 10px; */
+            height: 50px;
+
+        }
+        /* Apply color for li block-level element */
+        li{
+            /* background-color: cadetblue; (1) */
+            display: inline-block;
+            padding: 0 15px;
+
+            /* Here indicate the line-height becoz container element(li) height and text height both are different , so both ah match panna tha line-height use pandroim */
+            line-height: 50px;
+
+        }
+
+        /* Change li default type block level to inline,
+            block_level
+                    Home
+                    About
+                    Courses
+                    Contact
+
+        now convert to inline beacoz , inline element comes like Home About Courses Contact
+            display: inline;
+            In this inline display property doesn't support width and height
+
+        If you need to change the inline display property width and height
+
+        use Inline-block
+            display: inline-block;
+          */
+
+
+          /* Temp undisplay */
+        #Coming_Soon {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Display Property</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li id="Coming_Soon"><a href="#" >Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>

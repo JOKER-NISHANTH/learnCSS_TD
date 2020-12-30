@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        /* anchor and link both are same */
+        /*a{
+            color:red;
+        }*/
+
+        a:link{
+            color:red;
+        }
+
+        /* visited pseudo class is used for  check the link is already clicked for not*/
+
+        a:visited {
+            color:black;
+        }
+        a:hover{
+            color: rgb(20, 141, 20);
+        }
+
+        /* Only click the link , not release the mouse state */
+        a:active {
+            color:darkmagenta
+        }
+
+        /* On control without mouse  eg: Tab key*/
+        a:focus{
+            color:blue;
+        }
+
+        #Subscribe_id:hover{
+            color:brown;
+        }
+        #email_id:focus{
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <ol>
+        <li> :link</li>
+        <li> :visited</li>
+        <li> :hover</li>
+        <li> :active</li>
+        <li> :focus</li>
+    </ol>
+    <p><a href="#">Link Test</a></p>
+    <p>
+        All Technologies has its advantages and disadvantage.
+        Similary <a href="https://www.youtube.com/" target="_blank" >Youtube</a> can waste hours of your life "Entertainment" videos or can help you advance your career
+    </p>
+    <p>
+        I acn use <a href="https://facebook/" target="_blank" >FaceBook</a> for business marketing , Can someone tell me other uses ?
+    </p>
+
+    <form action="" method="post">
+        <label for="email_id">Email : </label> <br>
+        <input type="email" name="email" id="email_id"> <br>
+        <input type="submit" value="Subscribe" id="Subscribe_id">
+    </form>
+
+</body>
+</html>

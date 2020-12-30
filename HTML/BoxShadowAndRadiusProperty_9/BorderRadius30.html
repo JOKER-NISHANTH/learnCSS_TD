@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Raduis Property</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+            div{
+
+            border: 1px solid crimson;
+            padding: 10px;
+            margin: 20px auto;
+            width: 100px;
+            height: 100px;
+
+        }
+        #top-left{
+
+            /* 1st (+) right/left (-)  ; 2nd (+)bottom/top(-) 3rd color */
+            box-shadow: -5px -5px #666666;
+
+            /* ShortHand Property */
+            border-radius: 10px;
+            /* border-radius: 10px 0; */
+        }
+        #bottom-right{
+            /* 1st (+) right/left (-)  ; 2nd (+)bottom/top(-) ; 3rd blur ; 4th color */
+            box-shadow: 5px 5px 5px #666666;
+
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        #bottom-right-spread{
+            /* 1st (+) right/left (-)  ; 2nd (+)bottom/top(-) ; 3rd blur ; 4th spread ;5th color */
+            box-shadow: 5px 5px 5px 10px  #666666;
+
+
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        #outer-spread {
+            /* 1st (+) right/left (-)  ; 2nd (+)bottom/top(-) ;  3th spread ;4th color */
+
+            box-shadow: 0 0 25px rgb(154, 205, 50);
+
+            border-radius: 10px 15px 20px 25px;
+        }
+        #insert{
+               /* 1st inset for inner side  ; 2st (+) right/left (-)  ; 3nd (+)bottom/top(-) ;  4th spread ;5th color */
+
+            box-shadow: inset 0 0 20px rgb(247, 247, 142);
+            /* border-radius: 50px; */
+            border-radius: 100px;
+
+            /* text-align: center , for text harizontal center  */
+            text-align: center;
+
+            /* line-height:100px for vertical center
+            here match the line-height(100px) and box-height(100px)  */
+            line-height:100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Border Raduis Property</h1>
+    <div id="top-left">Top Left</div>
+    <div id="bottom-right">Bottom Right</div>
+    <div id="bottom-right-spread">Botto Right Spread</div>
+    <div id="outer-spread">Outer Spreed</div>
+    <div id="insert">Insert</div>
+</body>
+</html>

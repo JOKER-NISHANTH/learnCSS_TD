@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Selector</title>
+    <style>
+        /* p is a element selctor */
+        p{
+            color:brown;
+        }
+        #performance {
+            color:blueviolet;
+        }
+        /* Class Selctor */
+        .notice{
+            color:blue;
+        }
+        .rank{
+            color:cyan;
+        }
+        .average{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Selector</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo minus distinctio veniam omnis, sit possimus eum error expedita provident quisquam ipsam facere dignissimos numquam quam.</p>
+    <p class="notice">This is notice message..</p>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo rem exercitationem accusamus recusandae, veritatis ut magnam eaque, quo inventore hic totam quisquam quas voluptate perspiciatis!
+    </p>
+    <p class="warning">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque mollitia dolorem, sint labore, deleniti ipsam quaerat fugit eos ducimus impedit, commodi animi incidunt? Perspiciatis, fugiat?
+    </p>
+    <p class="notice">This is yet another notice message</p>
+    <table id="performance" border="2">
+        <tr>
+            <th>HTML</th>
+            <th>CSS</th>
+            <th>JavaScript</th>
+            <th>Rank</th>
+            <th>Average</th>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td>80</td>
+            <td>67</td>
+            <td class="rank">7</td>
+            <td class="average">78%</td>
+        </tr>
+        <tr>
+            <td>90</td>
+            <td>80</td>
+            <td>87</td>
+            <td class="rank">3</td>
+            <td class="average">86%</td>
+        </tr>
+        <tr>
+            <td>95</td>
+            <td>95</td>
+            <td>95</td>
+            <td class="rank">1</td>
+            <td class="average">95%</td>
+        </tr>
+    </table>
+
+</body>
+</html>

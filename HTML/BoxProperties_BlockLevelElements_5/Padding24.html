@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Properties - Padding</title>
+    <style>
+        #wrapper{
+            width: 50%;
+            border: 3px dashed crimson;
+        }
+        h1, p {
+            border: 2px solid yellowgreen;
+
+            /* padding-top: 10px;
+            padding-left: 25px;
+            padding-right: 20px;
+            padding-bottom: 10px; */
+
+            /* First - ShortHand Clock-Wise Direction */
+            /* padding: 10px 25px 10px 15px ; */
+
+            /* Second -ShortHand  it's applying all side*/
+            /* padding: 10px; */
+
+
+            /* Third -ShortHand  it's applying 1st 10px is topand bottom  , 2nd 25px is right and left*/
+            /* padding: 10px 25px; */
+
+            /* Third -ShortHand  it's applying 1st 15px is top   , 2nd 25px is right  , 3rd* 10px is bottom  , missing 4th values is automatically taken in right-side value that means there 25px is left*/
+            padding: 15px 25px 10px ;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Padding Property</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum possimus reiciendis error praesentium ipsam, odit modi. Ratione perspiciatis molestias tenetur atque ad expedita ducimus ullam qui dolores? Dolores incidunt ex voluptatibus impedit debitis hic eligendi nemo sit. Cupiditate, nihil sapiente, earum vel assumenda deserunt eveniet repudiandae maiores iste eum iure.</p>
+    </div>
+</body>
+</html>
