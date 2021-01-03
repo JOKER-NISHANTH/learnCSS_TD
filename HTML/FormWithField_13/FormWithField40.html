@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with fieldsets</title>
+    <style>
+        fieldset{
+            border:3px solid crimson;
+            margin-bottom: 15px;
+            border-radius: 25px;
+            padding-left: 40px;
+
+        }
+        legend{
+            background-color: aquamarine;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form with fieldsets</h1>
+    <form action="">
+        <fieldset>
+            <legend>Login Details</legend>
+            <p>
+                <label for="usrname_id">User Name : </label><br>
+                <input type="text" name="username" id="usrname"> <br>
+                <label for="e_id">Email : </label> <br>
+                <input type="email" name="email_id" id="e_id"> <br>
+                <label for="pwd_id">Password : </label> <br>
+                <input type="password" name="pwd" id="pwd_id"> <br>
+                <label for="cpwd_id">Password : </label> <br>
+                <input type="password" name="cpwd" id="cpwd_id"> <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <p>
+                <label for="doNo_id">Door No : </label> <br>
+                <input type="text" name="doorNo" id="doNo_id"> <br>
+                <label for="str_id">Street</label> <br>
+                <input type="text" name="street" id="str_id"> <br>
+                <label for="area_id">Area : </label> <br>
+                <input type="text" name="area" id="area_id"> <br>
+                <label for="district_id">District</label> <br>
+                <input type="text" name="district" id="district_id"> <br>
+                <label for="state_id">State</label> <br>
+                <input type="text" name="state" id="state_id"> <br>
+                <label for="country_id">Country</label> <br>
+                <input type="text" name="country" id="country_id"> <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Eduction Details</legend>
+            <p>
+                <label for="qulif_id"> Qualification </label> <br>
+                <input type="text" name="qualification" id="qulif_id" > <br>
+                <label for="clg_id">College</label> <br>
+                <input type="text" name="college" id="clg_id"> <br>
+                <label for="year_passed_id">Year Passed</label> <br>
+                <input type="text" name="YearPassed" id="year_passed_id"> <br>
+            </p>
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Save">
+        </p>
+    </form>
+</body>
+</html>

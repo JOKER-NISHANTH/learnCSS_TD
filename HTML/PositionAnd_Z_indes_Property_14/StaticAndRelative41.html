@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position And Z index Property</title>
+    <style>
+        /* HTML normal flow */
+        /*Block level element coming on one by one */
+        /*Inline element coming on side by side */
+        h1,h2,h3,p{
+            padding: 5px;
+        }
+        h1{
+            background-color:darkgrey;
+        }
+        h2{
+            background-color: burlywood;
+            position: relative;
+            left: 25px; /* X -axies*/
+            top:-25px; /* Y -axies*/
+            z-index: 3;
+        }
+        p{
+            background-color: darkkhaki;
+            position: relative;
+            left:50px;
+            top:-60px;
+
+        }
+        h3{
+            background-color: cadetblue;
+        }
+        span{
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<!-- Block level element coming on one by one -->
+<!-- Inline element coming on side by side -->
+<body>
+    <h1>Position And Z index Property</h1>
+    <h2>Flow of html elements</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, delectus aperiam dolorum mollitia assumenda beatae sunt sequi aliquid nisi voluptatem cum praesentium fugit vero excepturi dolorem vitae consequatur voluptate nam earum officia quidem suscipit eveniet! Possimus sunt soluta optio rerum maiores accusantium at quis assumenda, aut illo asperiores quos odio.</p>
+
+    <h3>Pay close <span>attention</span> to the flow</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, voluptates consequuntur! Eius, sapiente? Quisquam iure quis ullam accusamus beatae ad aliquid itaque quae inventore consequuntur atque eveniet possimus omnis rerum, earum qui eius! Neque perspiciatis numquam illum in sunt, quasi repellendus consequuntur, asperiores doloribus facilis tenetur cumque commodi! Modi praesentium nam delectus aperiam nihil, ab quam, </p>
+</body>
+</html>
